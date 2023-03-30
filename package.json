@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "animate.css": "^4.1.1",
     "node-sass": "^8.0.0"
   }
 }
