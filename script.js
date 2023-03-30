@@ -58,6 +58,9 @@ function animationSetup() {
             if (intersecting && index > -1) {
                 entry.target.classList.add("animate__animated", observedElements[index].animation);
             }
+        },
+        {
+            threshold: 0.5
         })
     })
 
