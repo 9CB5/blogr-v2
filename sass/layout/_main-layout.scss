@@ -39,7 +39,7 @@
 
     &__image-editor {
         @include respond(desktop) {
-            content: url(../../images/illustration-editor-desktop.svg);
+            content: url(../images/illustration-editor-desktop.svg);
             position: absolute;
             right: -263px;
             top: -230px;
@@ -50,7 +50,7 @@
     &__image-laptop {
         width: 25rem;
         @include respond(desktop) {
-            content: url(../../images/illustration-laptop-desktop.svg);
+            content: url(../images/illustration-laptop-desktop.svg);
             position: absolute;
             left: -291px;
             top: 0px;
