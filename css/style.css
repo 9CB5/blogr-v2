@@ -155,7 +155,7 @@
         max-width: 88rem; } }
   @media only screen and (min-width: 1400px) {
     .main-layout__image-editor {
-      content: url("../../images/illustration-editor-desktop.svg");
+      content: url(../../images/illustration-editor-desktop.svg);
       position: absolute;
       right: -263px;
       top: -230px;
@@ -164,7 +164,7 @@
     width: 25rem; }
     @media only screen and (min-width: 1400px) {
       .main-layout__image-laptop {
-        content: url("../../images/illustration-laptop-desktop.svg");
+        content: url(../../images/illustration-laptop-desktop.svg);
         position: absolute;
         left: -291px;
         top: 0px;
@@ -224,7 +224,7 @@
 
 .infastructure {
   align-items: center;
-  background-image: url("./../../images/bg-pattern-circles.svg"), linear-gradient(#2c2d3f, #3f4164);
+  background-image: url(./../../images/bg-pattern-circles.svg), linear-gradient(#2c2d3f, #3f4164);
   background-position: center -200px, center;
   background-repeat: no-repeat;
   background-size: 35rem, cover;
