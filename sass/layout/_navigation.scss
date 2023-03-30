@@ -63,7 +63,7 @@
 
         &__arrow {
             @include respond(desktop) {
-                content: url("../../images/icon-arrow-light.svg");
+                content: url(../../images/icon-arrow-light.svg);
             }
         }
 

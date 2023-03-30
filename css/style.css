@@ -346,7 +346,7 @@
         justify-content: flex-start; } }
     @media only screen and (min-width: 1400px) {
       .navigation__links__arrow {
-        content: url("../../images/icon-arrow-light.svg"); } }
+        content: url(../../images/icon-arrow-light.svg); } }
     .navigation__links > li {
       color: #1f3f5b;
       font-size: 1.3rem;
