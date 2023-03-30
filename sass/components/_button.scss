@@ -1,0 +1,51 @@
+.btn {
+    border-radius: 2rem;
+    border-style: none;
+    color: $light-red;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.6rem;
+    width: 7rem;
+    z-index: 2;
+
+    &:active {
+        background: $very-light-red;
+        color: $white;
+    }
+
+    &--transparent {
+        background: none;
+        border: 1px solid $white;
+        color: $white;
+
+        &:active {
+            background: $white;
+            color: $light-red;
+        }
+    }
+
+    &--transparent-no-border {
+        color: $very-dark-blue;
+        padding: 1rem;
+        background: transparent;
+
+        @include respond(desktop) {
+            color: $white;
+            height: 2rem;
+            padding: 0;
+        }
+    }
+
+    &--gradient {
+        background: linear-gradient(to right, $very-light-red-gradient, $light-red-gradient);
+        color: $white;
+        padding: 1rem;
+
+        @include respond(desktop) {
+            background: $white;
+            color: $light-red;
+            height: 2rem;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <!-- Meta data -->
+        <!---------------------------------------------------------------------------------------->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Blogr</title>
+
+        <!-- Font -->
+        <!---------------------------------------------------------------------------------------->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        >
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="./images/favicon-32x32.png">
+
+        <!-- CSS -->
+        <!---------------------------------------------------------------------------------------->
+        <link rel="stylesheet" href="css/style.css?v=1.0">
+    </head>
+
+    <body>
+        <!-- Navigation section -->
+        <!---------------------------------------------------------------------------------------->
+        <nav class="navigation">
+            <img
+                src="./images/logo.svg"
+                alt="logo"
+                class="navigation__logo"
+            >
+
+            <ul class="navigation__links">
+                <li class="navigation__links__dropdown">
+                    <span
+                        onclick="togglePanel(0)"
+                        class="navigation__links__parent"
+                    >
+                        Product <img class="navigation__links__arrow" id="arrow-0" src="./images/icon-arrow-dark.svg" alt="arrow">
+                    </span>
+
+                    <div
+                        class="navigation__links__panel"
+                        id="panel-0"
+                    >
+                        <a class="navigation__links__link" href="#">Overview</a>
+                        <a class="navigation__links__link" href="#">Pricing</a>
+                        <a class="navigation__links__link" href="#">Marketplace</a>
+                        <a class="navigation__links__link" href="#">Features</a>
+                        <a class="navigation__links__link" href="#">Integrations</a>
+                    </div>
+                </li>
+
+                <li class="navigation__links__dropdown">
+                    <span
+                        onclick="togglePanel(1)"
+                        class="navigation__links__parent"
+                    >
+                        Company <img class="navigation__links__arrow" id="arrow-1" src="./images/icon-arrow-dark.svg" alt="arrow">
+                    </span>
+
+                    <div
+                        class="navigation__links__panel"
+                        id="panel-1"
+                    >
+                        <a class="navigation__links__link" href="#">About</a>
+                        <a class="navigation__links__link" href="#">Team</a>
+                        <a class="navigation__links__link" href="#">Blog</a>
+                        <a class="navigation__links__link" href="#">Careers</a>
+                    </div>
+                </li>
+
+                <li class="navigation__links__dropdown">
+                    <span
+                        onclick="togglePanel(2)"
+                        class="navigation__links__parent"
+                    >
+                        Connect <img class="navigation__links__arrow" id="arrow-2" src="./images/icon-arrow-dark.svg" alt="arrow">
+                    </span>
+
+                    <div
+                        class="navigation__links__panel"
+                        id="panel-2"
+                    >
+                        <a class="navigation__links__link" href="#">Contact</a>
+                        <a class="navigation__links__link" href="#">Newsletter</a>
+                        <a class="navigation__links__link" href="#">LinkedIn</a>
+                    </div>
+                </li>
+
+                <div class="navigation__links__buttons">
+                    <button class="btn btn--transparent-no-border">Login</button>
+                    <button class="btn btn--gradient">Sign up</button>
+                </div>
+            </ul>
+
+            <img
+                onclick="toggleMenu()"
+                class="navigation__hamburger"
+                src="./images/icon-hamburger.svg"
+                alt="hamburger"
+            />
+        </nav>
+
+        <!-- Header section -->
+        <!---------------------------------------------------------------------------------------->
+        <header class="header">
+            <h1 class="heading--primary">A modern publishing platform</h1>
+
+            <p class="mb-4 sentence">Grow your audience and build your online brand</p>
+
+            <div class="header__button-container">
+                <button class="btn">Start for Free</button>
+                <button class="btn btn--transparent">Learn More</button>
+            </div>
+
+            <img class="header__bg" src="./images/bg-pattern-intro.svg" alt="header pattern">
+        </header>
+
+        <!-- Introduction section -->
+        <!---------------------------------------------------------------------------------------->
+        <section class="main-layout">
+            <h2 class="heading--secondary">Designed for the future</h2>
+
+            <div class="main-layout__box">
+                <div class="main-layout__image-box">
+                    <img
+                        alt="editor"
+                        class="main-layout__image-editor mb-12"
+                        src="../../images/illustration-editor-mobile.svg"
+                    >
+                </div>
+
+                <div
+                    id="first-observe"
+                    class="main-layout__words"
+                >
+                    <h3 class="heading--third mb-4">Introducing an extensible editor</h3>
+                    <p class="sentence sentence--dark mb-12">
+                        Blogr features an exceedingly intuitive interface which lets you focus on one
+                        thing: creating content. The editor supports management of multiple blogs and
+                        allows easy manipulation of embeds such as images, videos and Markdown. Extensbility
+                        with plugins and themes provide easy ways to add functionality or change the looks of
+                        a blog.
+                    </p>
+
+                    <h3 class="heading--third mb-4">Robust content management</h3>
+                    <p class="sentence sentence--dark">
+                        Flexible content management enables users to easily move through posts. Increase
+                        the usability of your blog by adding customized categories, sections, format, or flow.
+                        With this functionality, you're in full control.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infastructure section -->
+        <!---------------------------------------------------------------------------------------->
+        <section class="infastructure">
+            <div class="infastructure__box">
+                <div class="infastructure__images">
+                    <img
+                        alt="phone"
+                        class="infastructure__phone-img"
+                        src="./images/illustration-phones.svg"
+                    >
+                </div>
+
+                <div id="third-observe" class="infastructure__words">
+                    <h2 class="heading--secondary heading--secondary--light mb-4">State of the Art Infastructure</h2>
+
+                    <p class="sentence">
+                        With reliability and speed in mind, worldwide data centers provide the backbone
+                        for ultra fast connectivity. This ensures your site will load instantly, no matter
+                        where your readers are, keeping your site competitive.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Finishing section -->
+        <!---------------------------------------------------------------------------------------->
+        <div class="main-layout">
+            <div class="main-layout__box-2">
+                <div class="main-layout__image-box">
+                    <img
+                        alt="laptop"
+                        class="main-layout__image-laptop mb-12"
+                        src="../../images/illustration-laptop-mobile.svg"
+                    >
+                </div>
+
+                <div id="second-observe" class="main-layout__words">
+                    <h3 class="heading--third mb-4">Free, open, simple</h3>
+                    <p class="sentence sentence--dark mb-12">
+                        Blogr is a free and open source application backed by a large community of helpful
+                        developers. It supports features such as code syntax highlighting, RSS feeds, social
+                        media integration, third-party commenting tools, and works seamlessly with Google analytics.
+                        The architecture is clean and is relatively easy to learn.
+                    </p>
+
+                    <h3 class="heading--third mb-4">Powerful tooling</h3>
+                    <p class="sentence sentence--dark">
+                        Batteries included. We built a simple and straightforward CLI tool that makes customization
+                        and deployment a breeze, but capable of producing even the most complicated sites.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <!---------------------------------------------------------------------------------------->
+        <footer class="footer">
+            <div class="footer__box">
+                <img
+                    alt="logo"
+                    class="footer__logo"
+                    src="./images/logo.svg"
+                >
+
+                <div class="footer__links">
+                    <h4 class="heading--fourth mb-4">Product</h4>
+
+                    <a class="footer__link" href="#">Overview</a>
+                    <a class="footer__link" href="#">Pricing</a>
+                    <a class="footer__link" href="#">Marketplace</a>
+                    <a class="footer__link" href="#">Features</a>
+                    <a class="footer__link" href="#">Integrations</a>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="heading--fourth mb-4">Company</h4>
+
+                    <a class="footer__link" href="#">About</a>
+                    <a class="footer__link" href="#">Team</a>
+                    <a class="footer__link" href="#">Blog</a>
+                    <a class="footer__link" href="#">Careers</a>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="heading--fourth mb-4">Connect</h4>
+
+                    <a class="footer__link" href="#">Contact</a>
+                    <a class="footer__link" href="#">Newsletter</a>
+                    <a class="footer__link" href="#">LinkedIn</a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script import -->
+        <!-------------------------------------------------------------------------------------------->
+        <script src="./script.js"></script>
+    </body>
+</html>

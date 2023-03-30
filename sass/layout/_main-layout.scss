@@ -1,0 +1,82 @@
+.main-layout {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5rem;
+    overflow-x: hidden;
+    padding: 0rem 2rem;
+
+    @include respond(desktop) {
+        margin-bottom: 2rem;
+    }
+
+    &__box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(desktop) {
+            align-items: flex-start;
+            flex-direction: row-reverse;
+            max-width: 88rem;
+        }
+    }
+
+    &__box-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        @include respond(desktop) {
+            align-items: center;
+            flex-direction: row;
+            height: 50rem;
+            max-width: 88rem;
+        }
+    }
+
+    &__image-editor {
+        @include respond(desktop) {
+            content: url("../../images/illustration-editor-desktop.svg");
+            position: absolute;
+            right: -263px;
+            top: -230px;
+            width: 55rem;
+        }
+    }
+
+    &__image-laptop {
+        width: 25rem;
+        @include respond(desktop) {
+            content: url("../../images/illustration-laptop-desktop.svg");
+            position: absolute;
+            left: -291px;
+            top: 0px;
+            width: 55rem;
+        }
+    }
+
+    &__image-box {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+
+        @include respond(desktop) {
+            width: 50%;
+            height: 40rem;
+        }
+    }
+
+    &__words {
+        width: 100%;
+        padding: 0 2rem;
+
+        @include respond(desktop) {
+            width: 50%;
+            padding-left: 5rem;
+        }
+    }
+}

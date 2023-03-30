@@ -1,0 +1,48 @@
+.footer {
+    background-color: $very-dark-black-blue;
+    border-top-right-radius: 5rem;
+    display: flex;
+    justify-content: center;
+
+    &__logo {
+        width: 6rem;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+
+        @include respond(desktop) {
+            gap: 1rem;
+        }
+    }
+
+    &__link {
+        color: $grayish-blue;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__box {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        justify-content: center;
+        padding: 5rem;
+        width: 100%;
+
+        @include respond(desktop) {
+            align-items: flex-start;
+            flex-direction: row;
+            gap:16rem;
+            justify-content: flex-start;
+            max-width: 93rem;
+        }
+    }
+}

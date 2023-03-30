@@ -1,0 +1,11 @@
+// Media queries
+// ================================================================================================
+@mixin respond($breakpoint) {
+    @if $breakpoint == desktop {
+        @media only screen and (min-width: 1400px) { @content };
+    }
+
+    @if $breakpoint == desktop-xl {
+        @media only screen and (min-width: 1500px) { @content };
+    }
+}
